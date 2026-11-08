@@ -11,7 +11,7 @@
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-API-Account-License-Management/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
   <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0"/></a>
-  <a href="https://github.com/ishandutta2007/Awesome-API-Account-License-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-API-Account-License-Management?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Account-License-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-API-Account-License-Management?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
 
@@ -63,7 +63,7 @@ Below is a comparison of commercial SaaS and managed cloud solutions for API man
 
 Self-hosted and community-supported open-source solutions for API gateways, entitlement enforcement, license key issuance, and usage metering. Sorted in descending order by GitHub stargazers count.
 
-| 📦 Project | ⭐ Stars | 📄 License | 🛠️ Tech Stack | 📌 Primary Focus & Capabilities |
+| 📦 Project | ⭐ GitHub_Stars | 📄 License | 🛠️ Tech Stack | 📌 Primary Focus & Capabilities |
 |:---|:---|:---|:---|:---|
 | **[Kong Gateway](https://github.com/Kong/kong)** | [![Stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers) | Apache-2.0 | Lua, NGINX | Cloud-native, high-performance API gateway and microservice management layer supporting authentication, rate limiting, and observability plugins. |
 | **[One-API](https://github.com/songquanpeng/one-api)** | [![Stars](https://img.shields.io/github/stars/songquanpeng/one-api?style=social&color=white)](https://github.com/songquanpeng/one-api/stargazers) | MIT | Go, React | Multi-LLM API management, key distribution, quota allocation, user balance tracking, and consumption billing across AI provider endpoints. |
@@ -140,7 +140,7 @@ We welcome community contributions, additional projects, and verified pricing co
 1. 🍴 **Fork the repository** on GitHub.
 2. 📝 **Edit `README.md`** following the established table formats:
    - For SaaS products, provide exact starting tier pricing, free tier/trial limits, and company scale valuation/revenue.
-   - For Open-Source projects, provide repository link, star badge (`style=social&color=white` linking to `/stargazers`), license, tech stack, and concise description.
+   - For Open-Source projects, provide repository link, Stars_Badge (`style=social&color=white` linking to `/stargazers`), license, tech stack, and concise description.
 3. 🚀 **Submit a Pull Request** with a brief summary of additions or updates.
 
 ---

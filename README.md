@@ -1,27 +1,38 @@
-# Awesome API Account & License Management [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+<p align="center">
+  <img src="assets/banner.svg" alt="Awesome API Account &amp; License Management Banner" width="100%">
+</p>
 
-> A curated list of SaaS platforms and open-source software for API account management, license key enforcement, entitlement management, API metering, and usage-based monetization.
+# 🚀 Awesome API Account & License Management
 
-[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/ishandutta2007/Awesome-API-Account-License-Management/pulls)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
-[![GitHub stars](https://img.shields.io/github/stars/ishandutta2007/Awesome-API-Account-License-Management?style=social)](https://github.com/ishandutta2007/Awesome-API-Account-License-Management/stargazers)
+> 🌟 A curated list of SaaS platforms and open-source software for API account management, license key enforcement, entitlement management, API metering, and usage-based monetization.
+
+<p align="left">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
+  <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Account-License-Management/pulls"><img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg" alt="PRs Welcome"/></a>
+  <a href="http://creativecommons.org/publicdomain/zero/1.0/"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-API-Account-License-Management/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-API-Account-License-Management?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
 
 **API Account & License Management** encompasses tools, gateways, and frameworks that empower companies to authenticate API consumers, issue cryptographically signed license keys, enforce usage quotas and seats, meter AI token/API consumption, and monetize API products.
 
 ---
 
-## Table of Contents
+## 📑 Table of Contents
 
-- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
-- [SaaS / Hosted Platforms](#saas--hosted-platforms)
-- [Open-Source GitHub Projects](#open-source-github-projects)
-- [Feature Matrix: Gateway vs. Entitlement vs. Metering](#feature-matrix-gateway-vs-entitlement-vs-metering)
-- [How to Contribute](#how-to-contribute)
-- [Disclaimer](#disclaimer)
+- [📊 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [☁️ SaaS / Hosted Platforms](#️-saas--hosted-platforms)
+- [💻 Open-Source GitHub Projects](#-open-source-github-projects)
+- [🧩 Feature Matrix: Gateway vs. Entitlement vs. Metering](#-feature-matrix-gateway-vs-entitlement-vs-metering)
+- [📈 Star History](#-star-history)
+- [💖 Support & Community](#-support--community)
+- [🤝 How to Contribute](#-how-to-contribute)
+- [⚠️ Disclaimer](#️-disclaimer)
 
 ---
 
-## Sector Overview & Market Dynamics
+## 📊 Sector Overview & Market Dynamics
 
 The global API Management market is estimated at **$6.89B–$8.86B in 2025** and projected to exceed **$8.77B–$10.32B in 2026**, expanding rapidly at a CAGR of ~20% toward $37B+ by 2034 driven by pervasive microservices adoption, multi-cloud migrations, and surging LLM/AI token metering demands. 
 
@@ -29,11 +40,11 @@ The sector displays a **moderately fragmented and layered structure**: while hyp
 
 ---
 
-## SaaS / Hosted Platforms
+## ☁️ SaaS / Hosted Platforms
 
 Below is a comparison of commercial SaaS and managed cloud solutions for API management, developer accounts, licensing, and monetization, sorted in descending order by company valuation / market capitalization.
 
-| Product | Valuation / Revenue Scale | Primary Focus | Starting Price | Free Tier / Trial Limits |
+| 🏢 Product | 💰 Valuation / Revenue Scale | 🎯 Primary Focus | 💳 Starting Price | 🎁 Free Tier / Trial Limits |
 |:---|:---|:---|:---|:---|
 | **[Google Cloud Apigee](https://cloud.google.com/apigee)** | Alphabet Market Cap: **~$2.1T+** | Enterprise Full-Lifecycle API Management, Analytics & Monetization | Pay-As-You-Go: **$0.50–$0.70/hr** per active environment + **$20/million** standard API calls (**$100/million** extensible calls) | **60-day Free Evaluation Trial** with full enterprise capabilities |
 | **[AWS Marketplace Management](https://aws.amazon.com/marketplace)** | Amazon Market Cap: **~$2.0T+** | API Product Catalog, Procurement & Monetization via AWS Entitlement APIs | **No upfront fees**; AWS revenue-share take rate of **3%** of TCV for SaaS listings (scales down to 1.5%–2% for large contracts) | **Free to list**; supports vendor-configured 15, 30, or 60-day free buyer trials |
@@ -48,11 +59,11 @@ Below is a comparison of commercial SaaS and managed cloud solutions for API man
 
 ---
 
-## Open-Source GitHub Projects
+## 💻 Open-Source GitHub Projects
 
 Self-hosted and community-supported open-source solutions for API gateways, entitlement enforcement, license key issuance, and usage metering. Sorted in descending order by GitHub stargazers count.
 
-| Project | Stars | License | Tech Stack | Primary Focus & Capabilities |
+| 📦 Project | ⭐ Stars | 📄 License | 🛠️ Tech Stack | 📌 Primary Focus & Capabilities |
 |:---|:---|:---|:---|:---|
 | **[Kong Gateway](https://github.com/Kong/kong)** | [![Stars](https://img.shields.io/github/stars/Kong/kong?style=social&color=white)](https://github.com/Kong/kong/stargazers) | Apache-2.0 | Lua, NGINX | Cloud-native, high-performance API gateway and microservice management layer supporting authentication, rate limiting, and observability plugins. |
 | **[One-API](https://github.com/songquanpeng/one-api)** | [![Stars](https://img.shields.io/github/stars/songquanpeng/one-api?style=social&color=white)](https://github.com/songquanpeng/one-api/stargazers) | MIT | Go, React | Multi-LLM API management, key distribution, quota allocation, user balance tracking, and consumption billing across AI provider endpoints. |
@@ -71,7 +82,7 @@ Self-hosted and community-supported open-source solutions for API gateways, enti
 
 ---
 
-## Feature Matrix: Gateway vs. Entitlement vs. Metering
+## 🧩 Feature Matrix: Gateway vs. Entitlement vs. Metering
 
 When architecting an API monetization or licensing infrastructure, choose components based on architectural responsibilities:
 
@@ -99,33 +110,50 @@ When architecting an API monetization or licensing infrastructure, choose compon
 +--------------------------------------------+ +------------------------------------+
 ```
 
-- **Full-Lifecycle API Management Suites (WSO2, Apigee, MuleSoft, Tyk, Gravitee):** Provide developer portals, API key generation, proxy routing, rate-limiting, and documentation out of the box.
-- **Dedicated License Enforcement Servers (Keygate, Keygen):** Specialized in license key cryptographic generation, machine fingerprinting, seats/floating licenses, and subscription state.
-- **Usage Metering & Monetization Engines (Lago, OpenMeter):** High-frequency event ingestion that connects API transactions and LLM token counts directly to invoicing and billing gateways.
+- 🌐 **Full-Lifecycle API Management Suites (WSO2, Apigee, MuleSoft, Tyk, Gravitee):** Provide developer portals, API key generation, proxy routing, rate-limiting, and documentation out of the box.
+- 🔑 **Dedicated License Enforcement Servers (Keygate, Keygen):** Specialized in license key cryptographic generation, machine fingerprinting, seats/floating licenses, and subscription state.
+- ⚡ **Usage Metering & Monetization Engines (Lago, OpenMeter):** High-frequency event ingestion that connects API transactions and LLM token counts directly to invoicing and billing gateways.
 
 ---
 
-## How to Contribute
+## 📈 Star History
+
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-API-Account-License-Management&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-API-Account-License-Management&type=date&legend=top-left)
+
+---
+
+## 💖 Support & Community
+
+Thank you so much for exploring and supporting **Awesome API Account & License Management**! If you find this curated collection helpful in designing or scaling your API infrastructure:
+
+- 🌟 **Star the repository** to boost visibility and help other platform engineers discover it.
+- 🍴 **Fork the repo** to contribute new tools, updates, and ecosystem developments.
+- 📢 **Share it** with your network, team, or developer community on X, LinkedIn, or Discord!
+- ☕ **Buy me a coffee / Sponsor**: If this project saved you research time or added value to your work, consider supporting continued maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007). Every bit of support is deeply appreciated!
+
+---
+
+## 🤝 How to Contribute
 
 We welcome community contributions, additional projects, and verified pricing corrections!
 
-1. **Fork the repository** on GitHub.
-2. **Edit `README.md`** following the established table formats:
+1. 🍴 **Fork the repository** on GitHub.
+2. 📝 **Edit `README.md`** following the established table formats:
    - For SaaS products, provide exact starting tier pricing, free tier/trial limits, and company scale valuation/revenue.
    - For Open-Source projects, provide repository link, star badge (`style=social&color=white` linking to `/stargazers`), license, tech stack, and concise description.
-3. **Submit a Pull Request** with a brief summary of additions or updates.
+3. 🚀 **Submit a Pull Request** with a brief summary of additions or updates.
 
 ---
 
-## Disclaimer
+## ⚠️ Disclaimer
 
-- This repository is a community-curated informational resource; inclusion does not constitute an endorsement.
-- All product names, trademarks, logos, and brands belong to their respective owners.
-- SaaS pricing tiers, terms of service, and free trial constraints are subject to change by vendors; always check official vendor websites for current agreements.
+- 📌 This repository is a community-curated informational resource; inclusion does not constitute an endorsement.
+- 🏷️ All product names, trademarks, logos, and brands belong to their respective owners.
+- 💡 SaaS pricing tiers, terms of service, and free trial constraints are subject to change by vendors; always check official vendor websites for current agreements.
 
 ---
 
 <p align="center">
-  <b>Built for platform engineers, product leaders, and developers building robust API licensing systems.</b><br>
-  <sub>Found this helpful? Don't forget to star the repository!</sub>
+  <b>Built with ❤️ for platform engineers, product leaders, and developers building robust API licensing systems.</b><br>
+  <sub>Found this helpful? Don't forget to star the repository! ⭐</sub>
 </p>

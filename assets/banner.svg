@@ -1,0 +1,191 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradients -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#38bdf8" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="glowGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="pillGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#0f172a" stop-opacity="0.9"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#334155" stroke-width="0.75" stroke-opacity="0.3"/>
+    </pattern>
+
+    <!-- Filter for Glow effects -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <style>
+    .title {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 800;
+      font-size: 46px;
+      fill: #ffffff;
+      letter-spacing: -1px;
+    }
+    .subtitle {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 500;
+      font-size: 20px;
+      fill: #94a3b8;
+    }
+    .tagline {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      fill: #64748b;
+    }
+    .pill-text {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      font-size: 13px;
+      fill: #cbd5e1;
+    }
+    
+    /* Animations */
+    @keyframes pulseOrb {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.35; }
+      50% { transform: scale(1.15) translate(25px, -15px); opacity: 0.6; }
+    }
+    @keyframes pulseOrb2 {
+      0%, 100% { transform: scale(1) translate(0, 0); opacity: 0.25; }
+      50% { transform: scale(1.2) translate(-30px, 20px); opacity: 0.5; }
+    }
+    @keyframes beamFlow {
+      0% { stroke-dashoffset: 400; }
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes floatPill {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+    }
+
+    .orb1 {
+      animation: pulseOrb 8s ease-in-out infinite;
+      transform-origin: 200px 100px;
+    }
+    .orb2 {
+      animation: pulseOrb2 10s ease-in-out infinite;
+      transform-origin: 1000px 300px;
+    }
+    .flow-line {
+      stroke-dasharray: 12, 12;
+      animation: beamFlow 14s linear infinite;
+    }
+    .pill-item-1 { animation: floatPill 4s ease-in-out infinite; }
+    .pill-item-2 { animation: floatPill 4.5s ease-in-out 0.5s infinite; }
+    .pill-item-3 { animation: floatPill 5s ease-in-out 1s infinite; }
+    .pill-item-4 { animation: floatPill 4.2s ease-in-out 1.5s infinite; }
+    .pill-item-5 { animation: floatPill 4.8s ease-in-out 2s infinite; }
+  </style>
+
+  <!-- Deep Base Background -->
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  
+  <!-- Subtle Blueprint Grid -->
+  <rect width="100%" height="100%" fill="url(#grid)"/>
+
+  <!-- Background Animated Glowing Ambient Orbs -->
+  <g>
+    <circle cx="220" cy="110" r="180" fill="url(#glowGrad1)" class="orb1" filter="url(#glow)"/>
+    <circle cx="1020" cy="300" r="220" fill="url(#glowGrad2)" class="orb2" filter="url(#glow)"/>
+  </g>
+
+  <!-- Flowing Network Circuit Lines in Background -->
+  <g opacity="0.25">
+    <path d="M 0 340 C 300 340, 450 380, 700 350 C 950 320, 1050 370, 1200 360" fill="none" stroke="#38bdf8" stroke-width="2" class="flow-line"/>
+    <path d="M 0 80 C 250 90, 400 40, 650 70 C 900 100, 1050 40, 1200 50" fill="none" stroke="#c084fc" stroke-width="2" class="flow-line"/>
+    <circle cx="700" cy="350" r="4" fill="#38bdf8"/>
+    <circle cx="650" cy="70" r="4" fill="#c084fc"/>
+    <circle cx="300" cy="340" r="3" fill="#818cf8"/>
+  </g>
+
+  <!-- Outer Border Frame -->
+  <rect x="15" y="15" width="1170" height="390" rx="16" fill="none" stroke="#334155" stroke-width="1.2" stroke-opacity="0.6"/>
+
+  <!-- FOREGROUND CONTENT: Header Icon + Title & Subtitle (Always in crystal-clear foreground) -->
+  <g transform="translate(600, 115)" text-anchor="middle">
+    <!-- Top Category Pill -->
+    <rect x="-165" y="-62" width="330" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1" stroke-opacity="0.6"/>
+    <circle cx="-140" cy="-46" r="4" fill="#38bdf8"/>
+    <text x="-124" y="-41" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" letter-spacing="1.5">CURATED ARCHITECTURE LIST</text>
+
+    <!-- Main Title with Gradient Accent -->
+    <text y="5" class="title">
+      Awesome <tspan fill="url(#accentGrad)">API Account &amp; License</tspan> Management
+    </text>
+
+    <!-- Subtitle -->
+    <text y="50" class="subtitle">
+      Monetization &bull; Quota Enforcement &bull; Entitlements &bull; Metering &bull; Key Verification
+    </text>
+
+    <!-- Tagline description -->
+    <text y="88" class="tagline">
+      The comprehensive directory of commercial SaaS platforms and production-ready open-source engines
+    </text>
+  </g>
+
+  <!-- Bottom Dynamic Feature Pills in Foreground (Floating gently below description) -->
+  <g transform="translate(140, 280)">
+    <!-- Pill 1: Full-Lifecycle API Management -->
+    <g class="pill-item-1" transform="translate(0, 0)">
+      <rect width="170" height="42" rx="21" fill="url(#pillGrad)" stroke="#38bdf8" stroke-width="1.2" stroke-opacity="0.5"/>
+      <circle cx="22" cy="21" r="5" fill="#38bdf8"/>
+      <text x="36" y="26" class="pill-text">API Gateways</text>
+    </g>
+
+    <!-- Pill 2: Entitlement Engines -->
+    <g class="pill-item-2" transform="translate(185, 0)">
+      <rect width="180" height="42" rx="21" fill="url(#pillGrad)" stroke="#818cf8" stroke-width="1.2" stroke-opacity="0.5"/>
+      <circle cx="22" cy="21" r="5" fill="#818cf8"/>
+      <text x="36" y="26" class="pill-text">Entitlement Engines</text>
+    </g>
+
+    <!-- Pill 3: License Key Servers -->
+    <g class="pill-item-3" transform="translate(380, 0)">
+      <rect width="185" height="42" rx="21" fill="url(#pillGrad)" stroke="#c084fc" stroke-width="1.2" stroke-opacity="0.5"/>
+      <circle cx="22" cy="21" r="5" fill="#c084fc"/>
+      <text x="36" y="26" class="pill-text">License Key Servers</text>
+    </g>
+
+    <!-- Pill 4: Usage-Based Metering -->
+    <g class="pill-item-4" transform="translate(580, 0)">
+      <rect width="180" height="42" rx="21" fill="url(#pillGrad)" stroke="#34d399" stroke-width="1.2" stroke-opacity="0.5"/>
+      <circle cx="22" cy="21" r="5" fill="#34d399"/>
+      <text x="36" y="26" class="pill-text">Usage Metering</text>
+    </g>
+
+    <!-- Pill 5: AI Token Quotas -->
+    <g class="pill-item-5" transform="translate(775, 0)">
+      <rect width="155" height="42" rx="21" fill="url(#pillGrad)" stroke="#f472b6" stroke-width="1.2" stroke-opacity="0.5"/>
+      <circle cx="22" cy="21" r="5" fill="#f472b6"/>
+      <text x="36" y="26" class="pill-text">AI Token Quotas</text>
+    </g>
+  </g>
+</svg>
